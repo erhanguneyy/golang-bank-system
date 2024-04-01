@@ -191,6 +191,7 @@ func updateBalance(id string, newBalance float64) error {
 	}
 
 	err = os.Rename(tempFile.Name(), "money.txt")
+
 	if err != nil {
 		return err
 	}
